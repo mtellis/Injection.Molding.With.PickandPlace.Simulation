@@ -28,13 +28,12 @@ This project consists of a robot that picks up a finished injection molded part 
 -----------------------------------------------------------------------------------------------------
 ## 4. Hardware Diagram
 
-![](hdwr Diag.png)
-
+![](hdwr_Diag.png) 
 -----------------------------------------------------------------------------------------------------
 
 ## 5. Program Workflow Chart
 
-![](Prog Workflow.png)
+![](Prog_Workflow.png)
 
 --------------------------------------------------
 
