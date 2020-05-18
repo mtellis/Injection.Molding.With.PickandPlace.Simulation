@@ -4,7 +4,7 @@
 
 Spring 2020, California State University of Chico
 
-Project Managers: Marshall Ellis, Reese Culbertson, Ryan Martinez 
+Project Managers: Marshall Ellis, Reese Culbertson, and Ryan Martinez 
 
 ### Table of Contents
 - [1. Introduction]
