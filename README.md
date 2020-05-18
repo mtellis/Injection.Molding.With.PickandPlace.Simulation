@@ -29,6 +29,7 @@ This project consists of a robot that picks up a finished injection molded part 
 ## 4. Hardware Diagram
 
 ![](hdwr_Diag.png) 
+
 -----------------------------------------------------------------------------------------------------
 
 ## 5. Program Workflow Chart
@@ -40,3 +41,46 @@ This project consists of a robot that picks up a finished injection molded part 
 ## 6. CoppeliaSim Code to Run Simulation
 
 ![](Gifofsim.gif)
+
+function sysCall_init()
+
+    y=sim.getObjectHandle('y_joint')
+    hoist=sim.getObjectHandle('HoistActuator')
+    succ=sim.getScriptHandle('suctionPad')
+    
+    
+    xml = [[
+<ui title="speed control" closeable="true" resizable="false" activate="false">
+    <group layout="form" flat="true">
+        <label text="y speed (m/s): 0.00" id="3"/>
+        <hslider tick-position="above" tick-interval="1" minimum="-5" maximum="5" on-change="actuatey" id="2"/>
+        <label text="hoist speed (m/s): 0.00" id="1"/>
+        <hslider tick-position="above" tick-interval="1" minimum="-5" maximum="5" on-change="actuatehoist" id="4"/>
+        <label text="Magnet" id="5"/>
+        <button text="deactivate" on-click="actuateMagnet" checkable="true" id="6"/>
+    </group>
+    <label text="" style="* {margin-left: 400px;}"/>
+</ui>
+]]
+        ui=simUI.create(xml)
+end
+function actuatehoist(ui,id,newVal)
+ local val = 0.25*newVal
+    sim.setJointTargetVelocity(hoist,val)
+    simUI.setLabelText(ui,1,string.format("hoist speed (m/s): %.2f",val))
+end
+function actuatey(ui,id,newVal)
+ local val = 0.15*newVal
+    sim.setJointTargetVelocity(y,val)
+    simUI.setLabelText(ui,3,string.format("y speed (m/s): %.2f",val))
+end
+function actuateMagnet(ui)
+    local state = sim.getScriptSimulationParameter(succ,'active')
+    if state then
+        sim.setScriptSimulationParameter(succ,'active','false')
+        simUI.setButtonText(ui,5,"deactivated")
+    else
+        sim.setScriptSimulationParameter(succ,'active','true')
+        simUI.setButtonText(ui,5,"activated")
+    end
+end
