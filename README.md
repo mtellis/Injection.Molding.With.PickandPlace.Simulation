@@ -1,3 +1,5 @@
+![](chicostateeng.png)
+
 # SMFG 386 Project
 
 Spring 2020, California State University of Chico
@@ -18,6 +20,7 @@ This project consists of a robot that picks up a finished injection molded part 
 
 ## 2. Bill of Materials
 
+### The BOM is assuming all sub-assemblies (injection molder, gantry robot), have their own BOM's.
 ![](bompic.png)
 
 ----------------------------------------------------------------------------------
@@ -40,6 +43,8 @@ This project consists of a robot that picks up a finished injection molded part 
 
 ## 6. CoppeliaSim Code to Run Simulation
 
+### This is a gif of the linear gantry robot picking up the injection molded part, and placing it on the conveyour belt.
 ![](Gifofsim.gif)
 
+### Here is the non-threaded child script code, used to run the simulation. 
 ![](coppelia.code.sim.png)
