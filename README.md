@@ -14,7 +14,7 @@ Project Managers: Marshall Ellis, Reese Culbertson, Ryan Martinez
 
 
 ## 1. Introduction
-
+This project consists of a robot that picks up a finished injection molded part and transfers the part horizontally to a desired location. In our case, we released the part onto a conveyor belt that would then transfer the part into a parts bin. The goal of this project was to use what we had learned in class and replicate how we would potentially use the Plastic’s Lab robot in the injection molding process. Since our group works in the Plastics lab, we were able to apply our knowledge of injection molding and the pick and place process to be able to virtually simulate this scenario. For this project we used CoppeliaSim and Solidworks to design and build both the injection molder and the gantry robot. We then used various joints and knowledge we obtained from working on Lab 1’s Crane example, to be able to apply a non-threaded child script to the scene to be able to simulate and get our projection to function as we hoped. 
 
 ## 2. Bill of Materials
 
