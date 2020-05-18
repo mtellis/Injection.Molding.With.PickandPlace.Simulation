@@ -1,14 +1,16 @@
+# SMFG 386 Project
+
 Spring 2020, California State University of Chico
 
 Project Managers: Marshall Ellis, Reese Culbertson, Ryan Martinez 
 
 ### Table of Contents
-- [1. Introduction](#1-Introduction)
-- [2. Modeling](#2-Modeling)
-- [3. Sensor Calibration](#3-Sensor_Calibration)
-- [4. Controller Design and Simulations](#4-Controller_Design_and_Simulations)
-- [5. Appendix A: Simulation Code](#5-Appendix_A:_Simulation_Code)
-- [6. References](#6-References)
+- [1. Introduction]
+- [2. Bill of Materials]
+- [3. Cell Design]
+- [4. Hardware Diagram]
+- [5. Coppelia Code for Simulation]
+
 
 ## 1. Introduction
 The Furuta Pendulum consists of a driven arm which rotates in the horizontal plane and a pendulum attached to that arm which is free to rotate in the vertical plane. The goal of the project is to use a control system to balance a beam up vertically by controlling the motors position on a gantry. There are 2 encoders that measure the 360 degree position of the motor and the angle of the beam with respect to the floor. The system will keep the beam upright and prevent it from falling by moving to the location needed to balance the beam using a 90 degree angle. This project is purely virtual therefore, our group used MATLAB and MATLAB's SIMULINK to demonstrate the inverted pendulum project with linear and non-linear control algorithms. To display how the project works virtually, the program CoppeliaSim was used which the Furuta Pendulum was created and programmed with the MATLAB code we created.
@@ -78,12 +80,4 @@ Simulation can be seen in action on github labeled "2011214247_received_24079462
 ![](Control_FURPEN_.JPG)
 
 --------------------------------------------------
-## 6. References
-1. Wikipedia, Furuta Pendulum, Retrieved by Feb., 25, 2020 from
-https://en.wikipedia.org/wiki/Furuta_pendulum
 
-2. Control System Tutorials for MATLAB and Simulink, Retrieved by Feb., 25, 2020 from
-http://ctms.engin.umich.edu/CTMS/index.php?example=InvertedPendulum&section=SystemModeling
-
-3.  Quanser, Rotary Inverted Pendulum, Retrieved by Jan, 27, 2020 from
-https://www.quanser.com/products/rotary-inverted-pendulum/
