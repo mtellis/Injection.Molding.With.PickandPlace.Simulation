@@ -23,7 +23,7 @@ This project consists of a robot that picks up a finished injection molded part 
 ----------------------------------------------------------------------------------
 ## 3. Cell Design
 
-![](Cell dsign.png)
+![](Cell_dsign.png)
 
 -----------------------------------------------------------------------------------------------------
 ## 4. Hardware Diagram
