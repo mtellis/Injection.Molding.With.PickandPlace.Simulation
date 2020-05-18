@@ -20,31 +20,36 @@ This project consists of a robot that picks up a finished injection molded part 
 
 ## 2. Bill of Materials
 
-### The BOM is assuming all sub-assemblies (injection molder, gantry robot), have their own BOM's.
+### Figure 1:
+The BOM is assuming all sub-assemblies (injection molder, gantry robot), have their own BOM's.
+
 ![](bompic.png)
 
 ----------------------------------------------------------------------------------
 ## 3. Cell Design
 
+### Figure 2: The shop layout in our project scenario.
 ![](Cell_dsign.png)
 
 -----------------------------------------------------------------------------------------------------
 ## 4. Hardware Diagram
 
+### Figure 3: The step by step breakdown of how the hardware sequence functions for the injection molder and gantry robot.
 ![](hdwr_Diag.png) 
 
 -----------------------------------------------------------------------------------------------------
 
 ## 5. Program Workflow Chart
 
+### Figure 4: The flow of the process for our project
 ![](Prog_Workflow.png)
 
 --------------------------------------------------
 
 ## 6. CoppeliaSim Code to Run Simulation
 
-### This is a gif of the linear gantry robot picking up the injection molded part, and placing it on the conveyour belt.
+### Figure 5: The linear gantry robot picking up the injection molded part, and placing it on the conveyour belt.
 ![](Gifofsim.gif)
 
-### Here is the non-threaded child script code, used to run the simulation. 
+### Figure 6: The non-threaded child script code, used to run the simulation. 
 ![](coppelia.code.sim.png)
