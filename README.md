@@ -46,4 +46,4 @@ Project Managers: Marshall Ellis, Reese Culbertson, Ryan Martinez
 
 ## 6. CoppeliaSim Code to Run Simulation
 
-![]()
+![](Gifofsim.gif)
